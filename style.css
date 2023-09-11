@@ -66,6 +66,11 @@ main img {
   background: #5627ff;
 }
 
+.google:hover {
+  background: #3C2496;
+  transition: all 0.2s
+}
+
  button img {
   width: 24px;
   height: 24px;
@@ -90,4 +95,11 @@ button {
   border: 1px solid #828282;
   border-radius: 8px;
   background: #fff;
+}
+
+button:hover {
+  background: #E1E1E1;
+
+  transition: all 0.2s;
+  border: none;
 }
