@@ -38,7 +38,9 @@ main {
   border-radius: 30px;
   background: #FFFFFF;
 
-  margin-top: 4rem;;
+  margin-top: 4rem;
+
+  margin-bottom: 4rem;
 
 }
 
@@ -98,4 +100,31 @@ button img {
 
 .google:hover {
   background: #3C2298;
+}
+
+footer {
+  //position: absolute;
+  //margin-top: 10vh;
+  //width: 100%;
+  //height: 100px;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: .765rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+
+  gap: 0.2rem;
+  color: #090039;
+  bottom: 0;
+  margin: 0 auto;
+
+  line-height: 100px;
+}
+
+footer img {
+  width: 30px;
 }
