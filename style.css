@@ -14,14 +14,17 @@ body {
 main {
   margin: 0 auto;
   text-align: center;
-  max-width: 790px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-main img {
-  margin: 88px auto 60px auto;
-
-  width: 80px;
-  height: 80px;
+.main-logo {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-top: 3.75rem;
 }
 
 .login {
@@ -30,76 +33,69 @@ main img {
   align-items: center;
   justify-content: center;
 
+  min-width: 330px;
+  height: 30rem;
   border-radius: 30px;
-  background: #fff;
+  background: #FFFFFF;
 
-  width: 791px;
-  height: 625px;
+  margin-top: 8rem;;
+
 }
 
 .login h1 {
-  color: var(--Gray-1, #333);
-  font-family: Sora;
-  font-size: 40px;
-  font-weight: 800;
-
-  top: 0;
+  color: #333333;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-family: "Sora", sans-serif;
 }
 
-.login span {
-  color: var(--Gray-3, #828282);
-  font-family: Open Sans;
+.login > span {
+  color: #828282;
   font-size: 1rem;
   font-weight: 400;
-
-  margin: 13px auto 67px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1rem;
 }
 
-.login span:hover {
-  color: var(--Gray-3, #333333);
-}
-
-.google {
-  color: #fff;
-  font-family: Open sans;
-  border: none;
-  background: #5627ff;
-}
-
-.google:hover {
-  background: #3C2496;
-  transition: all 0.2s
-}
-
- button img {
-  width: 24px;
-  height: 24px;
-  margin: 0;
+.login > span:hover {
+  color: #999
 }
 
 button {
+  width: 300px;
+  height: 3.75rem;
+  border-radius: 8px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 440px;
-  height: 60px;
+  gap: .625rem;
 
-  gap: 10px;
+  border: 1px solid #C8C5C5;
+  margin-bottom: 1rem;
 
-  margin-bottom: 21px;
-
-  color: #333;
-  font-family: Open sans;
-  font-size: 24px;
+  background: #ffffff;
   font-weight: 700;
-  border: 1px solid #828282;
-  border-radius: 8px;
-  background: #fff;
 }
 
 button:hover {
-  background: #E1E1E1;
-
-  transition: all 0.2s;
+  background: #ECE9FD;
   border: none;
+  transition: all 0.2s;
+}
+
+button img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.google {
+  border: none;
+  background: #5627FF;
+  color: #ffffff;
+}
+
+.google:hover {
+  background: #3C2298;
 }
